@@ -1,0 +1,15 @@
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button__primary {
+  background: get($fk-btn-primary, 'background');
+  color: get($fk-btn-primary, 'color');
+}
+
+.button__secondary {
+  background: get($fk-btn-secondary, 'background');
+  color: get($fk-btn-secondary, 'color');
+}

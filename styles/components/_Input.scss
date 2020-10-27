@@ -1,0 +1,16 @@
+.input {
+  padding: 8px 16px;
+  border: 2px solid $fk-color-strokeGrey;
+  border-radius: 4px;
+
+  --field-background: #{$fk-color-white};
+  background: $fk-color-white; // IE11 fallback
+  background: var(--field-background, #{$fk-color-white});
+
+  .theme__dark & {
+    --field-background: #1b1b1b;
+  }
+  .theme__neon & {
+    --field-background: #00ffe7;
+  }
+}

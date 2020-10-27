@@ -1,7 +1,7 @@
 .theme {
   display: grid;
   gap: 8px;
-  padding: 36px 12px;
+  padding: 36px 24px;
 
   .inputRow {
     display: inherit;
@@ -17,4 +17,16 @@
       margin-right: 8px;
     }
   }
+}
+
+.theme__default {
+  background: $fk-color-mainBodyGrey;
+}
+
+.theme__dark {
+  background: $fk-color-trueBlack;
+}
+
+.theme__neon {
+  background: $fk-color-highContrastYellow;
 }
