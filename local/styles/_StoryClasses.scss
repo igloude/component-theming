@@ -1,0 +1,20 @@
+.theme {
+  display: grid;
+  gap: 8px;
+  padding: 36px 12px;
+
+  .inputRow {
+    display: inherit;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .actionsRow {
+    display: flex;
+    justify-content: flex-end;
+
+    > *:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
