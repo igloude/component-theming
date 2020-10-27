@@ -1,0 +1,21 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.spin {
+  animation: spin 1.1s infinite linear;
+  margin-top: -10px;
+}
+@include keyframes('spin') {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

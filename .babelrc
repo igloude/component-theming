@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "8.11.3",
+          "browsers": ["last 2 versions", "ie >= 11"]
+        },
+        "modules": false,
+        "corejs": "3.6.4",
+        "useBuiltIns": "entry"
+      }
+    ],
+    "react-app"
+  ],
+  "env": {
+    "test": {
+      "presets": ["react-app"],
+      "plugins": ["@babel/plugin-transform-modules-commonjs", "require-context-hook"]
+    }
+  }
+}

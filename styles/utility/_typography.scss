@@ -1,0 +1,70 @@
+// //////////////////////////////////////////
+// OVERRIDE UTILITY CLASSES
+// //////////////////////////////////////////
+// size
+.fk-fontSize__h1 {
+  font-size: $fk-font-size-h1 !important;
+  line-height: $fk-font-lineHeight-h1 !important;
+}
+.fk-fontSize__h2 {
+  font-size: $fk-font-size-h2 !important;
+  line-height: $fk-font-lineHeight-h2 !important;
+}
+.fk-fontSize__h3 {
+  font-size: $fk-font-size-h3 !important;
+  line-height: $fk-font-lineHeight-h3 !important;
+}
+.fk-fontSize__h4 {
+  font-size: $fk-font-size-h4 !important;
+  line-height: $fk-font-lineHeight-h4 !important;
+}
+.fk-fontSize__extraSmall {
+  font-size: $fk-font-size-extraSmall !important;
+}
+.fk-fontSize__small {
+  font-size: $fk-font-size-small !important;
+}
+.fk-fontSize__normal {
+  font-size: $fk-font-size-regular !important;
+}
+.fk-fontSize__medium {
+  font-size: $fk-font-size-medium !important;
+}
+.fk-fontSize__large {
+  font-size: $fk-font-size-large !important;
+}
+
+// weights
+.fk-fontWeight__regular {
+  font-family: $fk-font-regular !important;
+}
+.fk-fontWeight__semiBold {
+  font-family: $fk-font-book !important;
+}
+.fk-fontWeight__bold {
+  font-family: $fk-font-bold !important;
+}
+.fk-fontWeight__black {
+  font-family: $fk-font-black !important;
+}
+
+// headings
+.fk-h1 {
+  @extend .fk-fontWeight__bold;
+  @extend .fk-fontSize__h1;
+}
+
+.fk-h2 {
+  @extend .fk-fontWeight__bold;
+  @extend .fk-fontSize__h2;
+}
+
+.fk-h3 {
+  @extend .fk-fontWeight__bold;
+  @extend .fk-fontSize__h3;
+}
+
+.fk-h4 {
+  @extend .fk-fontWeight__bold;
+  @extend .fk-fontSize__h4;
+}

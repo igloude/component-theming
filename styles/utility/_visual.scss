@@ -1,0 +1,29 @@
+.fk-visuallyHidden {
+  @include visuallyHidden;
+}
+
+.fk-hidden {
+  display: none !important;
+}
+
+.fk-hardShadow {
+  box-shadow: 0 2px 0 $fk-color-hardShadowGrey;
+}
+
+.fk-hardShadow__header {
+  box-shadow: 0 4px 0 $fk-color-hardShadowGrey;
+}
+
+.fk-helpText {
+  @include helpText;
+}
+
+.fk-externalError {
+  line-height: 1.5em;
+  @include fieldError();
+}
+
+.fk-headerHelpText {
+  font-size: $fk-font-size-regular;
+  color: $fk-color-bodyGrey;
+}

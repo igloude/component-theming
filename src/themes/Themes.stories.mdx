@@ -1,0 +1,33 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+import Button from '../button/Button';
+import Input from '../input/Input';
+import Theme from '../themes/Theme';
+
+<Meta title="Themes" component={Theme} />
+
+## Themes
+
+### Default
+
+<Story name="Default">
+  <Theme theme="default">
+    <Input placeholder="Name" />
+  </Theme>
+</Story>
+
+### Dark
+
+<Story name="Dark">
+  <Theme theme="dark">
+    <Input placeholder="Name" />
+  </Theme>
+</Story>
+
+### Neon
+
+<Story name="Neon">
+  <Theme theme="neon">
+    <Input placeholder="Name" />
+  </Theme>
+</Story>

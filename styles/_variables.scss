@@ -1,0 +1,333 @@
+// //////////////////////////////////////////
+// FONTS
+// //////////////////////////////////////////
+// families
+$fk-font-regular: 'ProximaNova-Regular', Helvetica, sans-serif !default;
+$fk-font-semiBold: 'ProximaNova-Semibold', Helvetica, sans-serif !default;
+$fk-font-bold: 'ProximaNova-Bold', Helvetica, sans-serif !default;
+$fk-font-black: 'ProximaNova-Black', Helvetica, sans-serif !default;
+$fk-font-burbank: 'burbank', Helvetica, sans-serif !default;
+
+// TODO: remove after cleanup
+// support and re-map legacy weights:
+$fk-font-light: $fk-font-regular !default;
+$fk-font-book: $fk-font-semiBold !default;
+$fk-font-medium: $fk-font-semiBold !default;
+
+// sizes
+$fk-font-size-extraSmall: 12px !default;
+$fk-font-size-small: 14px !default;
+$fk-font-size-mobile-regular: 15px !default;
+$fk-font-size-regular: 16px !default;
+$fk-font-size-medium: 21px !default;
+$fk-font-size-large: 24px !default;
+
+$fk-font-size-h1: 36px;
+$fk-font-lineHeight-h1: 45px;
+
+$fk-font-size-h2: 28px;
+$fk-font-lineHeight-h2: 35px;
+
+$fk-font-size-h3: 21px;
+$fk-font-lineHeight-h3: 25px;
+
+$fk-font-size-h4: 18px;
+$fk-font-lineHeight-h4: 22.5px;
+
+// //////////////////////////////////////////
+// LAYOUT
+// //////////////////////////////////////////
+// breakpoints
+$fk-xsmall: em(450) !default;
+$fk-small: em(600) !default;
+$fk-medium: em(768) !default;
+$fk-large: em(992) !default;
+$fk-xlarge: em(1200) !default;
+
+$fk-breakpoints: (
+  'xsmall': 450px,
+  'small': 600px,
+  'medium': 768px,
+  'large': 992px,
+  'xlarge': 1200px,
+) !default;
+$fk-query-breakpoints: $fk-breakpoints !default;
+
+// grid sizes
+$fk-site-gutter: 0.9375rem !default;
+$fk-site-container: 75em !default;
+$fk-site-gutter-mobile: 16px !default;
+
+// modal
+$fk-modal-padding: 32px !default;
+$fk-tabPanel-padding: 8px !default;
+
+// //////////////////////////////////////////
+// COLORS
+// //////////////////////////////////////////
+// text
+$fk-color-headerBlack: #343434 !default;
+$fk-color-subheaderBlack: #444444 !default;
+$fk-color-bodyStrongGrey: #404040 !default;
+$fk-color-bodyGrey: #505050 !default;
+$fk-color-placeholderGrey: #909090 !default;
+
+// buttons & links
+$fk-color-bannerLinkyBlue: #0864af !default;
+$fk-color-linkyBlue: #0772ca !default;
+$fk-color-dangerRed: #d0021b !default;
+$fk-color-successGreen: #21a829 !default;
+$fk-color-secondaryGrey: #707070 !default;
+$fk-color-toggleGreen: #28cd32 !default;
+$fk-color-warningYellow: #f9f296 !default;
+$fk-color-highlightBlue: #1da1f2 !default;
+$fk-color-facebookBlue: #1877f2 !default;
+$fk-color-highContrastYellow: #feff48 !default;
+
+// ghosts
+$fk-color-ghostDestructiveRed: #f6e2e7 !default;
+$fk-color-ghostLinkyBlue: #eff5ff !default;
+$fk-color-ghostGrey: #f5f5f5 !default;
+$fk-color-ghostSuccessGreen: #f0fff1 !default;
+$fk-color-ghostYellow: #fcf8e3 !default;
+
+// gradients
+$fk-gradient-instaOrange: linear-gradient(125deg, #ff5502, #ff1661) !default;
+$fk-gradient-linkyBlue: linear-gradient(125deg, #0878d4, #2765cb) !default;
+$fk-gradient-ARPink: linear-gradient(125deg, #fe2d82, #fe2b44) !default;
+$fk-gradient-dangerRed: linear-gradient(145deg, #eb0046, #d0021b) !default;
+$fk-gradient-successGreen: linear-gradient(145deg, #28cd32, #21a829) !default;
+$fk-gradient-warningYellow: linear-gradient(125deg, #ffd800, #e9c413) !default;
+
+// stretched button background gradients
+$fk-gradient-stretched-instaOrange: linear-gradient(125deg, #ff5502 0%, #ff1661 50%, #ff5502 100%) !default;
+$fk-gradient-stretched-linkyBlue: linear-gradient(125deg, #0878d4 0%, #2765cb 45%, #0878d4 100%) !default;
+$fk-gradient-stretched-successGreen: linear-gradient(
+  145deg,
+  #28cd32 0%,
+  #21a829 45%,
+  #21a829 65%,
+  #28cd32 100%
+) !default;
+
+// backgrounds & strokes
+$fk-color-trueBlack: #000000 !default;
+$fk-color-tooltipBlack: #222222 !default;
+$fk-color-strokeGrey: #e0e0e0 !default;
+$fk-color-mainBodyGrey: #f9f9fd !default;
+$fk-color-panelGrey: #f8f8f8 !default;
+$fk-color-modalBackdropBlack: transparentize(#222222, 0.1) !default;
+$fk-color-modalGrey: #fdfdfd !default;
+$fk-color-modalStrokeGrey: transparentize(#ffffff, 0.1) !default;
+$fk-color-hardShadowGrey: transparentize(#000000, 0.95) !default;
+$fk-color-white: #ffffff !default;
+
+// camera
+$fk-color-cameraRed: #ff0000 !default;
+$fk-color-mobileTimerBackgroundGrey: transparentize(#444444, 0.6) !default;
+$fk-color-menuBackground: transparentize(#222222, 0.2) !default;
+
+// social/partner colors
+$fk-social-twitter: #00aced !default;
+$fk-social-skype: #00aff0 !default;
+$fk-social-facebook: #1877f2 !default;
+$fk-social-linkedin: #007cb6 !default;
+$fk-social-snapchat: #fefc00 !default;
+$fk-social-youtube: #ff0000 !default;
+$fk-social-voxer: #f26924 !default;
+$fk-ms-blue: #003f87 !default;
+$fk-ms-red: #d14335 !default;
+$fk-google-blue: #4285f4 !default;
+$fk-remind-blue: #2f75c1 !default;
+$fk-passport-orange: #ff8b00 !default;
+
+// //////////////////////////////////////////
+// BUTTON THEMES
+// //////////////////////////////////////////
+$fk-btn-super: (
+  background: $fk-gradient-stretched-instaOrange,
+  color: $fk-color-white,
+) !default;
+
+$fk-btn-primary: (
+  background: $fk-gradient-stretched-linkyBlue,
+  color: $fk-color-white,
+) !default;
+
+$fk-btn-primarySolid: (
+  background: $fk-color-linkyBlue,
+  color: $fk-color-white,
+) !default;
+
+$fk-btn-primaryGhost: (
+  background: $fk-color-ghostLinkyBlue,
+  color: $fk-color-bodyGrey,
+) !default;
+
+$fk-btn-danger: (
+  background: $fk-color-dangerRed,
+  color: $fk-color-white,
+) !default;
+
+$fk-btn-dangerGhost: (
+  background: $fk-color-ghostDestructiveRed,
+  color: $fk-color-dangerRed,
+) !default;
+
+$fk-btn-success: (
+  background: $fk-gradient-stretched-successGreen,
+  color: $fk-color-white,
+) !default;
+
+$fk-btn-successSolid: (
+  background: $fk-color-successGreen,
+  color: $fk-color-white,
+) !default;
+
+$fk-btn-secondary: (
+  background: $fk-color-white,
+  color: $fk-color-subheaderBlack,
+) !default;
+
+$fk-btn-disabled: (
+  background: $fk-color-strokeGrey,
+  color: $fk-color-bodyGrey,
+) !default;
+
+$fk-btn-white: (
+  background: $fk-color-white,
+  color: $fk-color-headerBlack,
+) !default;
+
+$fk-btn-actions-frozen: (
+  background: #4d7c91,
+  color: $fk-color-white,
+) !default;
+
+// TODO: deprecated button themes
+$fk-btn-primary-solid: $fk-btn-primarySolid !default;
+$fk-btn-cta: $fk-btn-primarySolid !default;
+$fk-btn-red: $fk-btn-danger !default;
+$fk-greenGradient: $fk-btn-success !default;
+$fk-btn-actions-default: $fk-btn-secondary !default;
+$fk-btn-actions-active: $fk-btn-successSolid !default;
+$fk-btn-actions-hidden: $fk-btn-danger !default;
+
+// //////////////////////////////////////////
+// MISC VARS
+// //////////////////////////////////////////
+$fk-in-out-sine: cubic-bezier(0.45, 0.05, 0.55, 0.95) !default;
+$fk-transition: cubic-bezier(0.25, 0.8, 0.25, 1) !default;
+
+$fk-site-hr-bg: #e2e2e2 !default;
+$fk-hr-background: #e7edf4 !default; // TODO: Resolve color conflict & move Student usage to $fk-site-hr-bg
+$fk-site-hr-bg-bold: #c3c3c3 !default;
+
+$fk-site-border-radius: 20px !default;
+$fk-modal-border-radius: 10px !default;
+$fk-btn-border-radius: 6px !default;
+$fk-checkbox-border-radius: 3px !default;
+$fk-field-border-radius: 12px !default;
+$fk-field-border-radius-small: $fk-btn-border-radius;
+$fk-field-border: 2px solid $fk-color-strokeGrey !default;
+$fk-field-height: 64px !default;
+$fk-field-height-small: 40px !default;
+
+// //////////////////////////////////////////
+// DEPRECATED VARS
+// //////////////////////////////////////////
+$fk-blue: #016fc8 !default; // Extremely important for accessibility
+$fk-darkBlue: #3c7d93 !default;
+$fk-dm-blue: #017bdf !default;
+$fk-lightBlue: #00afff !default;
+$fk-lightestBlue: #d9edfd !default;
+$fk-hover-blue-bg: #dbe7f2 !default; // TODO: Resolve color conflict & move node usage to $fk-lightestBlue
+$fk-purple: #a200e6 !default;
+$fk-red: #eb0046 !default;
+$fk-darkRed: #c61b45 !default;
+$fk-orange: #f26a3a !default;
+$fk-lightOrange: #ff8400 !default;
+$fk-black: #222 !default;
+$fk-trueBlack: #000 !default;
+$fk-green: #20bb43 !default;
+$fk-darkGreen: #008a00 !default;
+$fk-lightGreen: #17e600 !default;
+$fk-flipgridGreen: #16be00;
+$fk-mutedGreen: #eef6f4 !default;
+$fk-slate: #9fa5b3 !default;
+$fk-grey: #6c6c6c !default;
+$fk-lightGrey: #a5a5a5 !default;
+$fk-tertiaryGrey: #cacaca !default;
+$fk-borderGray: #dbdbdb !default;
+$fk-backgroundGrey: #eef1f6 !default;
+$fk-lightestGrey: #f7f7f7 !default;
+$fk-darkGrey: #4b4b4b !default;
+$fk-whitesmoke: whitesmoke !default;
+$fk-white: #ffffff !default;
+$fk-outline-grey: #d6d6d6 !default;
+$fk-placeholder-grey: #696969 !default;
+$fk-password-toggle-grey: #757575 !default;
+$fk-read-only-grey: #eee !default;
+
+$fk-listHeaderBlack: #343434 !default;
+$fk-listBorderGrey: #c9c5c5 !default;
+$fk-listHoverBackground: #e7f4ff !default;
+$fk-listFocus: 0 0 0px 3px $fk-blue !default;
+
+$fk-focus-blue: #5e9ed6 !default;
+$fk-focus-pulse-strong: transparentize($fk-focus-blue, 0.2) !default;
+$fk-focus-pulse-weak: transparentize($fk-focus-blue, 1) !default;
+$fk-focus-box-shadow: 0 0 1px 3px $fk-focus-blue !default;
+$fk-checkbox-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15) !default;
+
+$fk-link-blue: #0878d4 !default;
+$fk-link-darkBlue: #2054a6;
+$fk-border-grey: #e0e0e0 !default;
+$fk-pill-grey: #d6ddef !default;
+$fk-error-red: $fk-darkRed !default;
+
+// This ends up being darker than 25% opacity since the modal backdrops have a
+// default opacity of 85%, so they add together.
+$fk-response-player-background: transparentize($fk-trueBlack, 0.75) !default;
+
+$fk-textBlack: $fk-black !default;
+$fk-textGrey: #b3b3b3 !default;
+$fk-textMuted: #545454 !default;
+$fk-textMutedLight: #767676 !default;
+
+// button gradients/colors
+$fk-btn-blue: #0378d7 !default;
+$fk-btn-focus-shadow: 0 0 0px 3px $fk-blue, 0 0 0px 6px rgba(74, 144, 226, 0.2) !default;
+$fk-btn-cta-gradient: linear-gradient(138deg, #ff5502, #ff017f) !default;
+$fk-btn-primary-gradient: linear-gradient(110deg, #317eee, #0f59c0) !default;
+
+$fk-vibe-red: #ff086d !default;
+$fk-vibe-light-red: #ff009c !default;
+$fk-vibe-orange: #ffcc00 !default;
+$fk-vibe-yellow: #ffea00 !default;
+$fk-vibe-purple: #7800ff !default;
+$fk-vibe-light-purple: #d800ff !default;
+$fk-vibe-blue: #004eff !default;
+$fk-vibe-light-blue: #00ada9 !default;
+$fk-vibe-green: #25c300 !default;
+$fk-vibe-light-green: #00ff42 !default;
+
+$fk-errorRed: $fk-darkRed !default;
+$fk-moderated-orange: $fk-orange !default;
+
+$fk-sitebgc: #f8f8f8 !default;
+$fk-canvasColor: #e13f32 !default;
+$fk-topic-tip-red: #e9005e !default;
+$fk-table-header-grey: #747474 !default;
+$fk-focus-blue2: #0098e0 !default;
+$fk-focus-shadow2: rgba(102, 175, 233, 0.6) !default;
+
+// gradients
+$fk-gradient-yellow-red: linear-gradient(#ffba00, #ff0067) !default;
+$fk-gradient-yellow-red-angled: linear-gradient(172deg, #ffba00, #ff0067) !default;
+$fk-gradient-red-radial: radial-gradient(closest-side at 50% 100%, #ff4b10 75%, #ff017f 25%) !default;
+$fk-gradient-purple-red: linear-gradient($fk-vibe-purple, $fk-vibe-light-red) !default;
+$fk-gradient-red-orange: linear-gradient($fk-vibe-red, $fk-vibe-orange) !default;
+$fk-gradient-blue-green: linear-gradient($fk-vibe-blue, $fk-vibe-light-green) !default;
+$fk-gradient-green-yellow: linear-gradient($fk-vibe-green, $fk-vibe-yellow) !default;
+$fk-gradient-purple-blue: linear-gradient($fk-vibe-light-purple, $fk-vibe-light-blue) !default;
