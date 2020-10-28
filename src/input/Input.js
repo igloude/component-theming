@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Input = ({ className, ...rest }) => {
-  return <input className={`input ${className ? className : ''}`} {...rest} />;
+const Input = ({ className = '', ...rest }) => {
+  return <input className={`input ${className}`} {...rest} />;
 };
 
 Input.propTypes = {
