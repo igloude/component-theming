@@ -4,7 +4,6 @@
   border-radius: 4px;
 
   --field-background: #{$fk-color-white};
-  background: $fk-color-white; // IE11 fallback
   background: var(--field-background, #{$fk-color-white});
 
   .theme__dark & {
