@@ -5,11 +5,11 @@
 }
 
 .button__primary {
-  background: get($fk-btn-primarySolid, 'background');
-  color: get($fk-btn-primarySolid, 'color');
+  background: $fk-color-linkyBlue;
+  color: $fk-color-white;
 }
 
 .button__secondary {
-  background: get($fk-btn-secondary, 'background');
-  color: get($fk-btn-secondary, 'color');
+  background: $fk-color-strokeGrey;
+  color: $fk-color-subheaderBlack;
 }
