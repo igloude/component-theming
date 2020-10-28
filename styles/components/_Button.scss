@@ -5,8 +5,8 @@
 }
 
 .button__primary {
-  background: get($fk-btn-primary, 'background');
-  color: get($fk-btn-primary, 'color');
+  background: get($fk-btn-primarySolid, 'background');
+  color: get($fk-btn-primarySolid, 'color');
 }
 
 .button__secondary {
