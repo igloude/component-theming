@@ -1,0 +1,112 @@
+{
+  "name": "@flipgrid/flipkit",
+  "version": "7.8.2",
+  "description": "Flipgrid web's component library",
+  "main": "components/flipkit.js",
+  "files": [
+    "cli/",
+    "components/",
+    "constants/",
+    "fonts/",
+    "styles/",
+    "svg/",
+    "utilities/"
+  ],
+  "jest": {
+    "verbose": true,
+    "setupFiles": [
+      "<rootDir>/.jest/register-context.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/.jest/rtl.setup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm package-lock.json && rm -rf node_modules && npm i",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -c .storybook -o .out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flipgrid/flipkit.git"
+  },
+  "author": "Flipgrid",
+  "bugs": {
+    "url": "https://github.com/flipgrid/flipkit/issues"
+  },
+  "homepage": "https://github.com/flipgrid/flipkit#readme",
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "@rollup/plugin-commonjs": "11.1.0",
+    "@rollup/plugin-node-resolve": "7.1.3",
+    "@storybook/addon-a11y": "5.3.18",
+    "@storybook/addon-actions": "5.3.18",
+    "@storybook/addon-docs": "5.3.18",
+    "@storybook/addon-links": "5.3.18",
+    "@storybook/addons": "5.3.18",
+    "@storybook/preset-scss": "1.0.2",
+    "@storybook/react": "5.3.18",
+    "@testing-library/cypress": "6.0.0",
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.4.0",
+    "@types/jest": "25.1.2",
+    "@types/lodash": "4.14.158",
+    "@types/react": "16.9.20",
+    "@types/react-dom": "16.9.5",
+    "@typescript-eslint/eslint-plugin": "2.9.0",
+    "@typescript-eslint/parser": "2.9.0",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.1",
+    "babel-plugin-require-context-hook": "1.0.0",
+    "babel-preset-react-app": "9.1.2",
+    "cypress": "4.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "3.1.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "jest": "24.9.0",
+    "node-sass": "4.13.1",
+    "react": "16.12.0",
+    "react-dev-utils": "9.1.0",
+    "react-dom": "16.12.0",
+    "react-test-renderer": "16.12.0",
+    "rollup": "2.7.3",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-eslint": "7.0.0",
+    "rollup-plugin-filesize": "7.0.0",
+    "rollup-plugin-local-resolve": "1.0.7",
+    "rollup-plugin-peer-deps-external": "2.2.0",
+    "rollup-plugin-typescript2": "0.26.0",
+    "sass-loader": "8.0.2",
+    "storybook-addon-designs": "5.1.1",
+    "style-loader": "1.0.0",
+    "ts-loader": "6.2.1",
+    "typescript": "3.8.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "core-js": "3.6.4",
+    "markdown-extract": "1.0.2",
+    "prop-types": "15.7.2",
+    "react-router-dom": "5.1.2",
+    "resize-observer-polyfill": "1.5.1",
+    "ua-parser-js": "0.7.21"
+  },
+  "peerDependencies": {
+    "react": ">= 16.12.0",
+    "react-dom": ">= 16.12.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bin": {
+    "attribution-gen": "./cli/attribution-gen.js"
+  }
+}

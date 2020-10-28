@@ -9,7 +9,7 @@ npm-debug.log
 
 # npm pack output
 *.tgz
-package*
+package-lock*
 
 cypress/videos/
 cypress/screenshots/
